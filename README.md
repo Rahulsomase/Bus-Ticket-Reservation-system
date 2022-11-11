@@ -3,4 +3,4 @@
 <h2>
    Bus Ticket Reservation System
 </h2>   
- <img align="center" src="Bus copy.png" width="100%"/>
+ <img align="center" src="logo.png" width="100%"/>
