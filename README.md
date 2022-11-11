@@ -1,4 +1,4 @@
 # swell-animal-1277
 
 
- <img align="center" src="Bus copy.png"/>
+ <img align="center" src="Bus copy.png" width="100%"/>
