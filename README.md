@@ -38,5 +38,5 @@
 ![Er diagram](https://github.com/mayurisamanta/zealous-price-4318/blob/main/BusTicketReservationSystem/ProjectDetails/ER%20diagram/ERdiagram.png?raw=true)
 
 ## Flowchart
-![Flowchart](https://github.com/Rahulsomase/swell-animal-1277/tree/main/BusTicketReservationSystem/ProjectDetails/Flowchart-1.png?raw=true)
+![Flowchart](https://github.com/Rahulsomase/swell-animal-1277/blob/main/BusTicketReservationSystem/ProjectDetails/Flowchart-1.png)
 
