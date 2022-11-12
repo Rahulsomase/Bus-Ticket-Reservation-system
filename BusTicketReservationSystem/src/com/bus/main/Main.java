@@ -17,7 +17,7 @@ import com.bus.usecases.ViewTicketusecase;
 
 public class Main {
 	static void AdminOrCustomer() {
-		System.out.println(ConsoleColors.PURPLE + "+---------------------------+" + "\n"
+		System.out.println(ConsoleColors.BLACK + "+---------------------------+" + "\n"
 						 						   + "| 1. Login As Administrator |" + "\n"
 						 						   + "| 2. Login As Customer      |" + "\n"
 						 						   + "| 3. Exit                   |" + "\n"
@@ -33,16 +33,16 @@ public class Main {
 			choice = sc.nextInt();
 		}
 		catch (InputMismatchException e) {
-			System.out.println(ConsoleColors.RED_BACKGROUND + "Input type should be number" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.RED + "Input type should be number" + ConsoleColors.RESET);
 			AdminOrCustomer();
 		}
 		
 		if (choice == 1) {
-			System.out.println(ConsoleColors.ROSY_PINK + "Welcome Admin ! Please Login to your account" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.DARK_BLUE + "Welcome Admin ! Please Login to your account" + ConsoleColors.RESET);
 			AdminLogin();
 		}
 		else if (choice == 2) {
-			System.out.println(ConsoleColors.ROSY_PINK + "Welcome Customer !" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.DARK_BLUE + "Welcome Customer !" + ConsoleColors.RESET);
 			customerLoginOrSignup();
 		}
 		else if (choice == 3) {
@@ -50,7 +50,7 @@ public class Main {
 			System.exit(0);
 		}
 		else {
-			System.out.println(ConsoleColors.RED_BACKGROUND + "Please choose a number from below options" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.RED + "Please choose a number from below options" + ConsoleColors.RESET);
 			AdminOrCustomer();
 		}
 	}
@@ -66,7 +66,7 @@ public class Main {
 	}
 	
 	static void adminMethods() {
-		System.out.println(ConsoleColors.PURPLE + "+--------------------------------+" + "\n"
+		System.out.println(ConsoleColors.BLACK + "+--------------------------------+" + "\n"
 						 + "| Welcome Admin                  |" + "\n"
 						 + "| 1. Add Bus                     |" + "\n"
 						 + "| 2. Confirm Tickets of Customer |" + "\n"
@@ -81,14 +81,14 @@ public class Main {
 		try {
 			choice = sc.nextInt();
 			if (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5) {
-				System.out.println(ConsoleColors.RED_BACKGROUND + "Please choose a number from below options" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.RED + "Please choose a number from below options" + ConsoleColors.RESET);
 				adminMethods();
 			}
 			else adminChoice(choice);
 		}
 		catch (InputMismatchException e) {
 			
-			System.out.println(ConsoleColors.RED_BACKGROUND + "Input type should be number" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.RED + "Input type should be number" + ConsoleColors.RESET);
 			adminMethods();
 		}
 	}
@@ -121,7 +121,7 @@ public class Main {
 	}
 	
 	static void customerLoginOrSignup() {
-		System.out.println(ConsoleColors.PURPLE + "+--------------------------------+" + "\n"
+		System.out.println(ConsoleColors.BLACK + "+--------------------------------+" + "\n"
 				                                + "| 1. Login to your Account       |" + "\n"
 				                                + "| 2. Don't have Account? Sign Up |" + "\n"
 				                                + "| 3. Back                        |" + "\n"
@@ -145,12 +145,12 @@ public class Main {
 				System.exit(0);
 			}
 			else {
-				System.out.println(ConsoleColors.RED_BACKGROUND + "Please choose a number from below options" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.RED + "Please choose a number from below options" + ConsoleColors.RESET);
 				customerLoginOrSignup();
 			}
 		}
 		catch (InputMismatchException e) {
-			System.out.println(ConsoleColors.RED_BACKGROUND + "Input type should be number" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.RED + "Input type should be number" + ConsoleColors.RESET);
 			customerLoginOrSignup();
 		}
 		
@@ -182,7 +182,7 @@ public class Main {
 	}
 	
 	static void customerMethods(Customer customer) {
-		System.out.println(ConsoleColors.PURPLE + "+--------------------------------+" + "\n"
+		System.out.println(ConsoleColors.BLACK + "+--------------------------------+" + "\n"
 				 		 + "| 1. Book Bus Ticket             |" + "\n"
 				         + "| 2. Cancel Bus Ticket           |" + "\n"
 				         + "| 3. View Status of your Tickets |" + "\n"
@@ -196,14 +196,14 @@ public class Main {
 		try {
 			choice = sc.nextInt();
 			if (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5) {
-				System.out.println(ConsoleColors.RED_BACKGROUND + "Please choose a number from below options" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.RED + "Please choose a number from below options" + ConsoleColors.RESET);
 				customerMethods(customer);
 			}
 			else customerChoice(choice, customer);
 		}
 		catch (InputMismatchException e) {
 			
-			System.out.println(ConsoleColors.RED_BACKGROUND + "Input type should be number" + ConsoleColors.RESET);
+			System.out.println(ConsoleColors.RED + "Input type should be number" + ConsoleColors.RESET);
 			customerMethods(customer);
 		}
 	}

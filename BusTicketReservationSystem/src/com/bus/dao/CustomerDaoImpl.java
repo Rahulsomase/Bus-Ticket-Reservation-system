@@ -167,7 +167,7 @@ public class CustomerDaoImpl implements CustomerDao{
 						if (y <= 0) throw new BusException("Available Seat is not updated");
 						
 						
-						System.out.println(ConsoleColors.ROSY_PINK + "--------------------------------------------" + "\n"
+						System.out.println(ConsoleColors.GREEN + "--------------------------------------------" + "\n"
 																   + "Customer Id is : " + cusId + "\n"
 																   + "Bus No is : " + busNo + "\n"
 																   + "Seat No is from : " + seatFrom + " to " + seatTo + "\n"
@@ -273,14 +273,14 @@ public class CustomerDaoImpl implements CustomerDao{
 			
 			while (rs1.next()) {
 				flag = true;
-				System.out.println(ConsoleColors.ROSY_PINK + "---------------------------------------------" + ConsoleColors.RESET);
-				System.out.println(ConsoleColors.ROSY_PINK + "Bus Id : " + rs1.getInt("bId") + ConsoleColors.RESET);
-				System.out.println(ConsoleColors.ROSY_PINK + "Bus No : " + rs1.getInt("busNo") + ConsoleColors.RESET);
-				System.out.println(ConsoleColors.ROSY_PINK + "Total tickets : " + (rs1.getByte("seatTo") - rs1.getInt("seatFrom") + 1) + ConsoleColors.RESET);
-				if (rs1.getBoolean("status")) System.out.println(ConsoleColors.ROSY_PINK + "Status : Booked"  + ConsoleColors.RESET);
-				else System.out.println(ConsoleColors.ROSY_PINK + "Status : Pending" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.BLACK + "---------------------------------------------" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.BLACK + "Bus Id : " + rs1.getInt("bId") + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.BLACK + "Bus No : " + rs1.getInt("busNo") + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.BLACK + "Total tickets : " + (rs1.getByte("seatTo") - rs1.getInt("seatFrom") + 1) + ConsoleColors.RESET);
+				if (rs1.getBoolean("status")) System.out.println(ConsoleColors.GREEN + "Status : Booked"  + ConsoleColors.RESET);
+				else System.out.println(ConsoleColors.RED + "Status : Pending" + ConsoleColors.RESET);
 				
-				System.out.println(ConsoleColors.ROSY_PINK + "----------------------------------------------" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.BLACK + "----------------------------------------------" + ConsoleColors.RESET);
 			}
 			
 			if (flag == false) System.out.println(ConsoleColors.RED_BACKGROUND + "No tickets found" + ConsoleColors.RESET);

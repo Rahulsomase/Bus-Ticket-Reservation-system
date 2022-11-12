@@ -30,7 +30,7 @@ public class CusLoginusecase {
 			try {
 				customer = dao.cusLogin(username, password);
 				
-				System.out.println(ConsoleColors.ROSY_PINK + "Welcome " + customer.getFirstName() + " " + customer.getLastName() + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.DARK_BLUE + "Welcome " + customer.getFirstName() + " " + customer.getLastName() +"!"+ ConsoleColors.RESET);
 			} catch (CustomerException e) {
 				
 				System.out.println(ConsoleColors.RED_BACKGROUND + e.getMessage() + ConsoleColors.RESET);
